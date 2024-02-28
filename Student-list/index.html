@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="`en`">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student-List</title>
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+<div class="container pt-4 pb-4">
+    <form id="add-form" action="" class="form-list">
+        <div class="mb-3">
+            <input class="form-control" type="text" minlength="3" maxlength="36" required id="name-inp" placeholder="Имя">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="text" minlength="3" maxlength="36" required id="patronymic-inp" placeholder="Отчество">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="text" minlength="3" maxlength="36" required id="surname-inp" placeholder="Фамилия">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="text" minlength="3" maxlength="36" required id="faculty-inp" placeholder="Факультет">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="date" required id="birthday-inp" value="1990-01-01" min="1900-01-01"
+                   max="2024-01-01">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="number" required id="start-inp" placeholder="Год поступления" min="2000"
+                   max="2024">
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+    <th>ФИО</th>
+    <th>Дата рождения</th>
+    <th>Факультет</th>
+    <th>Год поступления</th>
+        </tr>
+        </thead>
+        <tbody id="stud-table">
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
