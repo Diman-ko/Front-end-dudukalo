@@ -33,7 +33,7 @@ export default class Worker {
         const formattedToday = dd + '.' + mm + '.' + yyyy;
         return formattedToday;
     }
-    getAge(worker) {
+    getAge() {
         const today = new Date();
         let age = today.getFullYear() -this.birthday.getFullYear();
         let mm = today.getMonth() - this.birthday.getMonth();

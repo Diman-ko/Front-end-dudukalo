@@ -1,4 +1,4 @@
-import Students from './students.js '
+import Students from './student.js '
 
 // let listStudent = [
 //     {
